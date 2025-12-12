@@ -6,6 +6,7 @@ $(function () {
   let monsterScroll = document.querySelectorAll('#monster-group .monster')
   let navHeight = nav.scrollHeight
 
+
   monsterScroll.forEach(
     (item) => (item.style.animationDelay = `${Math.random() * 1 + 0.4}s`)
   )

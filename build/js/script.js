@@ -4,7 +4,7 @@ $(function () {
   let headerCue = document.querySelector('.header-cue')
   let meetMonsters = document.querySelector('#meet')
   let monsterScroll = document.querySelectorAll('#monster-group .monster')
-  let navHeight = nav.scrollHeight
+  let navHeight2 = nav.scrollHeight
 
 
   monsterScroll.forEach(
@@ -22,7 +22,7 @@ $(function () {
 
   function moveHeader() {
     let top = window.pageYOffset
-    let mainOnTop = meetMonsters.getBoundingClientRect().top - navHeight
+    let mainOnTop = meetMonsters.getBoundingClientRect().top - navHeight2
 
     mainOnTop < 0
       ? nav.classList.add('in-body')

@@ -4,8 +4,7 @@ $(function () {
   let headerCue = document.querySelector('.header-cue')
   let meetMonsters = document.querySelector('#meet')
   let monsterScroll = document.querySelectorAll('#monster-group .monster')
-  let navHeight20 = nav.scrollHeight
-
+  let headerHeight = nav.scrollHeight
 
   monsterScroll.forEach(
     (item) => (item.style.animationDelay = `${Math.random() * 1 + 0.4}s`)
@@ -22,7 +21,7 @@ $(function () {
 
   function moveHeader() {
     let top = window.pageYOffset
-    let mainOnTop = meetMonsters.getBoundingClientRect().top - navHeight20
+    let mainOnTop = meetMonsters.getBoundingClientRect().top - headerHeight
 
     mainOnTop < 0
       ? nav.classList.add('in-body')
